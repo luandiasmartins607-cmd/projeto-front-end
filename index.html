@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfumaria GIOH</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      background-color: white;
+    }
+
+  
+
+    #sobrenos, #novidades {
+      color: white;
+      text-decoration: none;
+    }
+
+    #sobrenos:hover, #novidades:hover {
+      color: white;
+    }
+
+    .navbar-custom{
+      background-color: #0b4649;
+      height: 80px;
+    }
+    .navbar-brand{
+      padding: 0;
+      margin-left: 0;
+    }
+.navbar-brand img {
+height: 48px;
+margin-left: 8px;
+}
+/* BOTÕES DO MENU */
+.navbar-brand .nav-item.btn {
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-weight: 500;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-item.btn:hover {
+  background-color: #eefeff;
+  color: #0b4649;
+  border-color: #eefeff;
+  box-shadow: 0 0 10px solid rgba(0.0.0.15);
+}
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .carousel img {
+      height: 600px;
+      object-fit: cover;
+    }
+
+    .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar - LOGO -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="imagens/logo1.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <!-- MENUS DO TOPO -->
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item me-2">
+          <a id="sobrenos" class="btn btn-outline-light" href="sobre.html" target="_blank">Sobre Nós</a>
+        </li>
+        <li class="nav-item me-2">
+          <a id="novidades" class="btn btn-outline-light" href="novidades.php" target="_blank">Novidades</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="btn btn-outline-light" href="login.html" target="_blank">Login</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Carrossel de imagens -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+ <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagens/perfume_carrossel_1.png" class="d-block w-100" alt="Slide 1" />
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/perfume_carrossel_2.jpg" class="d-block w-100" alt="Slide 2" />
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/perfume_carrossel_3.png" class="d-block w-100" alt="Slide 3" />
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/perfume_carrossel_4.jpg" class="d-block w-100" alt="Slide 4" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+<!-- Produtos -->
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Nossos Perfumes</h2>
+  <h3 style="text-align: center;">Body Splash</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!--SEÇÃO BODY SPLASH-->
+    <!-- CARD 1 -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column">
+        <img src="imagens/1.png" class="card-img-top" alt="Body Splash Love Spell">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Victoria's Secret - Love Spell</h5>
+          <p class="card-text">Refrescante e suave, ideal para o dia a dia.</p>
+          <button class="btn btn-outline-primary mt-auto w-100" type="button" data-bs-toggle="collapse" data-bs-target="#info1">
+            Visualizar mais informações
+          </button>
+          <div class="collapse mt-3 text-secondary" id="info1">
+            <p><strong>Conteúdo:</strong> 250ml</p>
+            <p><strong>Valor:</strong> R$150,00</p>
+            <p><strong>Notas:</strong> Lavanda, bergamota, chá branco</p>
+            <p><strong>Família olfativa:</strong> Floral aromático</p>
+            <p><strong>Ideal para:</strong> Uso diário e momentos relaxantes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column">
+        <img src="imagens/2.png" class="card-img-top" alt="Body Splash Baunilha">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Victoria's Secret - Bare Vanilla</h5>
+          <p class="card-text">Aroma doce e envolvente com baunilha.</p>
+          <button class="btn btn-outline-primary mt-auto w-100" type="button" data-bs-toggle="collapse" data-bs-target="#info2">
+            Visualizar mais informações
+          </button>
+          <div class="collapse mt-3 text-secondary" id="info2">
+            <p><strong>Conteúdo:</strong> 250ml</p>
+            <p><strong>Valor:</strong> R$135,00</p>
+            <p><strong>Notas:</strong> Baunilha, caramelo, âmbar</p>
+            <p><strong>Família olfativa:</strong> Oriental doce</p>
+            <p><strong>Ideal para:</strong> Ocasiões especiais e clima ameno</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column">
+        <img src="imagens/3.png" class="card-img-top" alt="Body Splash Morango">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Victoria's Secret - Rush</h5>
+          <p class="card-text">Fragrância frutada e vibrante.</p>
+          <button class="btn btn-outline-primary mt-auto w-100" type="button" data-bs-toggle="collapse" data-bs-target="#info3">
+            Visualizar mais informações
+          </button>
+          <div class="collapse mt-3 text-secondary" id="info3">
+            <p><strong>Conteúdo:</strong> 250ml</p>
+            <p><strong>Valor:</strong> R$130,00</p>
+            <p><strong>Notas:</strong> Morango, frutas vermelhas, musk</p>
+            <p><strong>Família olfativa:</strong> Frutado fresco</p>
+            <p><strong>Ideal para:</strong> Dias quentes e momentos descontraídos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SEÇÃO PERFUMES FEMININOS -->
+<div class="container my-5">
+  <h3 class="text-center mb-4">Perfumes Femininos</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- CARD 1 -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column">
+        <img src="imagens/6.png" class="card-img-top" alt="Egeo Dolce">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Libre Yves - Saint Laurent Eau de Parfum</h5>
+          <p class="card-text">Doce, jovem e encantador.</p>
+          <button class="btn btn-outline-primary mt-auto w-100" type="button" data-bs-toggle="collapse" data-bs-target="#infoF1">
+            Visualizar mais informações
+          </button>
+          <div class="collapse mt-3 text-secondary" id="infoF1">
+            <p><strong>Conteúdo:</strong> 90ml</p>
+            <p><strong>Valor:</strong> R$689,90</p>
+            <p><strong>Notas:</strong> Marshmallow, baunilha, framboesa</p>
+            <p><strong>Família olfativa:</strong> Oriental gourmand</p>
+            <p><strong>Ideal para:</strong> Momentos leves e românticos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column">
+        <img src="imagens/7.png" class="card-img-top" alt="Floratta Rose">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Lancôme La Vie Est Belle Eau de Parfum</h5>
+          <p class="card-text">Clássico, delicado e feminino.</p>
+          <button class="btn btn-outline-primary mt-auto w-100" type="button" data-bs-toggle="collapse" data-bs-target="#infoF2">
+            Visualizar mais informações
+          </button>
+          <div class="collapse mt-3 text-secondary" id="infoF2">
+            <p><strong>Conteúdo:</strong> 30ml</p>
+            <p><strong>Valor:</strong> R$445,90</p>
+            <p><strong>Notas:</strong> Rosa, musk, lírio do vale</p>
+            <p><strong>Família olfativa:</strong> Floral</p>
+            <p><strong>Ideal para:</strong> Uso diário e ocasiões suaves</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column">
+        <img src="imagens/8.png" class="card-img-top" alt="Lily Eau de Parfum">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">L'Interdit Givenchy Eau de Toilette</h5>
+          <p class="card-text">Intenso, sofisticado e marcante.</p>
+          <button class="btn btn-outline-primary mt-auto w-100" type="button" data-bs-toggle="collapse" data-bs-target="#infoF3">
+            Visualizar mais informações
+          </button>
+          <div class="collapse mt-3 text-secondary" id="infoF3">
+            <p><strong>Conteúdo:</strong> 50ml</p>
+            <p><strong>Valor:</strong> R$584,90</p>
+            <p><strong>Notas:</strong> Flor de lírio, jasmim, âmbar</p>
+            <p><strong>Família olfativa:</strong> Floral bouquet</p>
+            <p><strong>Ideal para:</strong> Ocasiões especiais</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEÇÃO PERFUMES MASCULINOS -->
+<div class="container my-5">
+  <h3 class="text-center mb-4">Perfumes Masculinos</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- CARD 1 -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column">
+        <img src="imagens/11.png" class="card-img-top" alt="Malbec Tradicional">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">212 Vip Men Eau de Toilette</h5>
+          <p class="card-text">Marcante, masculino e elegante.</p>
+          <button class="btn btn-outline-primary mt-auto w-100" type="button" data-bs-toggle="collapse" data-bs-target="#infoM1">
+            Visualizar mais informações
+          </button>
+          <div class="collapse mt-3 text-secondary" id="infoM1">
+            <p><strong>Conteúdo:</strong> 100ml</p>
+            <p><strong>Valor:</strong> R$989,90</p>
+            <p><strong>Notas:</strong> Vinho, carvalho, âmbar</p>
+            <p><strong>Família olfativa:</strong> Amadeirado</p>
+            <p><strong>Ideal para:</strong> Noite e encontros sociais</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column">
+        <img src="imagens/13.png" class="card-img-top" alt="Malbec Noir">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Acqua di Giò Pour Homme Giorgio Armani Eau de Toilette</h5>
+          <p class="card-text">Intenso, moderno e irresistível.</p>
+          <button class="btn btn-outline-primary mt-auto w-100" type="button" data-bs-toggle="collapse" data-bs-target="#infoM2">
+            Visualizar mais informações
+          </button>
+          <div class="collapse mt-3 text-secondary" id="infoM2">
+            <p><strong>Conteúdo:</strong> 100ml</p>
+            <p><strong>Valor:</strong> R$734,90</p>
+            <p><strong>Notas:</strong> Uva, patchouli, musk</p>
+            <p><strong>Família olfativa:</strong> Amadeirado oriental</p>
+            <p><strong>Ideal para:</strong> Noites marcantes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column">
+        <img src="imagens/14.png" class="card-img-top" alt="Quasar">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Invictus Victory Elixir Rabanne Parfum Intense</h5>
+          <p class="card-text">Fresco, vibrante e esportivo.</p>
+          <button class="btn btn-outline-primary mt-auto w-100" type="button" data-bs-toggle="collapse" data-bs-target="#infoM3">
+            Visualizar mais informações
+          </button>
+          <div class="collapse mt-3 text-secondary" id="infoM3">
+            <p><strong>Conteúdo:</strong> 50ml</p>
+            <p><strong>Valor:</strong> R$689,90</p>
+            <p><strong>Notas:</strong> Limão, menta, cedro</p>
+            <p><strong>Família olfativa:</strong> Fougère fresco</p>
+            <p><strong>Ideal para:</strong> Dia a dia e prática esportiva</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Rodapé -->
+<footer>
+  <p>&copy; 2025 Perfumaria GIOH - Todos os direitos reservados</p>
+</footer>
+
+<!-- Scripts Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
